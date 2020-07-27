@@ -15,12 +15,12 @@
   <ExtraParams></ExtraParams>
   <Data>
     <Volume>
-      <HostDir>输入你的配置文件存放目录</HostDir>
+      <HostDir>Input your MEDIA folder!</HostDir>
       <ContainerDir>/media</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>输入你的视频媒体文件目录</HostDir>
+      <HostDir>Input your CONFIG folder</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -33,7 +33,7 @@
     </Variable>
     <Variable>
       <Name>VNC_PASSWORD</Name>
-      <Value>输入你的自定义密码</Value>
+      <Value>Input your password!</Value>
       <Mode/>
     </Variable>
   <Networking>
