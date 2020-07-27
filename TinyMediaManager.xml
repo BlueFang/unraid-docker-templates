@@ -1,35 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Container version="2">
+<?xml version="1.0"?>
+<Container>
   <Name>TinyMediaManager</Name>
-  <Project>https://www.tinymediamanager.org/</Project>
-  <Overview>
-  </Overview>
-  <Description>
-  tinyMediaManager is a media management tool written in Java/Swing. It is written to provide metadata for the Kodi Media Center (formerly known as XBMC), MediaPortal and Plex media server. Due to the fact that it is written in Java, tinyMediaManager will run on Windows, Linux and macOS (and possible more OS).
-  </Description>
-  <Registry>https://hub.docker.com/r/romancin/tinymediamanager</Registry>
-  <GitHub>https://github.com/romancin/tinymediamanager-docker</GitHub>
   <Repository>romancin/tinymediamanager</Repository>
-  <Icon></Icon>
-  <Support>https://github.com/romancin/tinymediamanager-docker</Support>
-  <BindTime>true</BindTime>
+  <Registry>https://hub.docker.com/r/romancin/tinymediamanager</Registry>
+  <Network>bridge</Network>
   <Privileged>false</Privileged>
+  <Support>https://github.com/romancin/tinymediamanager-docker</Support>
+  <Project></Project>
+  <Overview>TinyMediaManager</Overview>
+  <Description>使用romancin的TinyMediaManager镜像，添加了中文支持和密码支持。</Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:5800]/</WebUI>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>5800</HostPort>
-        <ContainerPort>5800</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>5900</HostPort>
-        <ContainerPort>5900</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
+  <Icon></Icon>
+  <ExtraParams></ExtraParams>
   <Data>
     <Volume>
       <HostDir>输入你的配置文件存放目录</HostDir>
@@ -53,5 +36,19 @@
       <Value>输入你的自定义密码</Value>
       <Mode/>
     </Variable>
-  </Environment>
+  <Networking>
+      <Port>
+        <HostPort>5800</HostPort>
+        <ContainerPort>5800</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5900</HostPort>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+  </Networking>    
+
+  
+  
 </Container>
