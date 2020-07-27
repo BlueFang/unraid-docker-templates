@@ -32,13 +32,11 @@
     <Variable>
       <Value>USERNAME</Value>
       <Name>USERNAME</Name>
-      <Description>用户名</Description>
       <Mode/>
     </Variable>
     <Variable>
       <Value>PASSWORD</Value>
       <Name>PASSWORD</Name>
-      <Description>密码</Description>
       <Mode/>
     </Variable>
   </Environment>
@@ -52,6 +50,4 @@
   <WebUI>http://[IP]:[PORT:8005]/</WebUI>
   <Icon></Icon>
   <ExtraParams></ExtraParams>
-  # <Config Type="Port" Name="Web Connect Port" Target="8005" Default="8005" Mode="tcp" Display="always-hide" Required="true" Description="协议端口">8005</Config>
-  # <Config Type="Path" Name="Config Storage Path" Target="/data" Default="/mnt/user" Mode="rw" Display="advanced-hide" Required="true" Description="挂载路径">/mnt/user</Config>
 </Containers>
