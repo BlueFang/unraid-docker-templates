@@ -31,11 +31,13 @@
     <Variable>
       <Value></Value>
       <Name>USERNAME</Name>
+      <Description>用户名</Description>
       <Mode/>
     </Variable>
     <Variable>
       <Value></Value>
       <Name>PASSWORD</Name>
+      <Description>密码</Description>
       <Mode/>
     </Variable>
   </Environment>
@@ -44,6 +46,7 @@
       <HostDir>/mnt/user</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
+      <Description>需要挂载的路径，根据自己的需要进行更改。</Description>
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8005]/</WebUI>
