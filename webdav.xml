@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/BlueFang/unraid/webdav.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <Name>webdav</Name>
+  <Description>
+	Simple webdav image using nginx running on Ubuntu 20.04. Images available for amd64, arm and arm64.
+  </Description>
+  <Overview>
+  Simple webdav image using nginx running on Ubuntu 20.04. Images available for amd64, arm and arm64.
+  </Overview>
+  <Support>https://github.com/BlueFang/unraid</Support>
+  <Registry>https://hub.docker.com/r/derkades/webdav</Registry>
+  <GitHub>https://github.com/BlueFang/unraid</GitHub>
+  <Repository>derkades/webdav</Repository>
+  <Project>https://hub.docker.com/r/derkades/webdav</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8005</HostPort>
+        <ContainerPort>8005</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8005]/</WebUI>
+  <Icon></Icon>
+  <ExtraParams></ExtraParams>
+</Containers>
