@@ -36,6 +36,7 @@
       <Value>Input your password!</Value>
       <Mode/>
     </Variable>
+  </Environment>
   <Networking>
       <Port>
         <HostPort>5800</HostPort>
@@ -47,8 +48,5 @@
         <ContainerPort>5900</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
-  </Networking>    
-
-  
-  
+  </Networking>
 </Container>
