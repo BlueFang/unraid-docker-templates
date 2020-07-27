@@ -5,7 +5,7 @@
   <Category>Cloud: Network:Web Status:Stable</Category>
   <Name>webdav</Name>
   <Description>
-	Simple webdav image using nginx running on Ubuntu 20.04. Images available for amd64, arm and arm64.
+  Simple webdav image using nginx running on Ubuntu 20.04. Images available for amd64, arm and arm64.
   </Description>
   <Overview>
   Simple webdav image using nginx running on Ubuntu 20.04. Images available for amd64, arm and arm64.
@@ -18,7 +18,7 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
-    <Mode>host</Mode>
+    <Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>8005</HostPort>
@@ -46,10 +46,11 @@
       <HostDir>/mnt/user</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
-      <Description>需要挂载的路径，根据自己的需要进行更改。</Description>
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8005]/</WebUI>
   <Icon></Icon>
   <ExtraParams></ExtraParams>
+  <Config Type="Port" Name="Web Connect Port" Target="8005" Default="8005" Mode="tcp" Display="always-hide" Required="true" Description="协议端口">8005</Config>
+  <Config Type="Path" Name="Config Storage Path" Target="/data" Default="/mnt/user" Mode="rw" Display="advanced-hide" Required="true" Description="挂载路径">/mnt/user</Config>
 </Containers>
