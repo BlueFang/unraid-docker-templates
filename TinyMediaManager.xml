@@ -1,52 +1,25 @@
 <?xml version="1.0"?>
-<Container>
+<Container version="2">
   <Name>TinyMediaManager</Name>
   <Repository>romancin/tinymediamanager</Repository>
-  <Registry>https://hub.docker.com/r/romancin/tinymediamanager</Registry>
+  <Registry>https://hub.docker.com/r/romancin/tinymediamanager/</Registry>
   <Network>bridge</Network>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/romancin/tinymediamanager-docker</Support>
-  <Project></Project>
-  <Overview>TinyMediaManager</Overview>
-  <Description>ä½¿ç”¨romancinçš„TinyMediaManageré•œåƒï¼Œæ·»åŠ äº†ä¸­æ–‡æ”¯æŒå’Œå¯†ç æ”¯æŒã€‚</Description>
-  <Category>Cloud: Network:Web Status:Stable</Category>
+  <Support>https://github.com/BlueFang/unraid-docker-templates/</Support>
+  <Project>https://www.tinymediamanager.org/</Project>
+  <TemplateURL>https://github.com/BlueFang/unraid-docker-templates/blob/master/TinyMediaManager.xml</TemplateURL>
+  <Icon>https://img.utdstc.com/icons/tiny-media-manager-mac.png</Icon>
+  <Category>Cloud:</Category>
+  <Overview>
+   [b][u][span style='color: #E80000;']ËµÃ÷[/span][/u][/b][br]
+   ±¾Ä£°æÖ»ÊÇÎªdockerhubÉÏµÄ¾µÏñÌí¼ÓÁËUnraidÄ£°åÖ§³Ö£¬²»¶Ô¾µÏñ±¾Éí¸ºÔğ¡£
+  </Overview>
   <WebUI>http://[IP]:[PORT:5800]/</WebUI>
-  <Icon></Icon>
-  <ExtraParams></ExtraParams>
-  <Data>
-    <Volume>
-      <HostDir>Input your MEDIA folder!</HostDir>
-      <ContainerDir>/media</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>Input your CONFIG folder</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment>
-    <Variable>
-      <Name>ENABLE_CJK_FONT</Name>
-      <Value>1</Value>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Name>VNC_PASSWORD</Name>
-      <Value>Input your password!</Value>
-      <Mode/>
-    </Variable>
-  </Environment>
-  <Networking>
-      <Port>
-        <HostPort>5800</HostPort>
-        <ContainerPort>5800</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>5900</HostPort>
-        <ContainerPort>5900</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-  </Networking>
+  <Config Name="VNC_Web" Target="5800" Default="5800" Mode="tcp" Description="ÈİÆ÷¶Ë¿Ú£º5800" Type="Port" Display="always" Required="ture" Mask="false"/>
+  <Config Name="VNC_Client" Target="5900" Default="5900" Mode="tcp" Description="ÈİÆ÷¶Ë¿Ú£º5900" Type="Port" Display="always" Required="ture" Mask="false"/>
+  <Config Name="/config" Target="/config" Default="/mnt/user/appdata/tMM/" Mode="rw" Description="tMMÅäÖÃÎÄ¼şÂ·¾¶£¬Ó³ÉäÎªÈİÆ÷Â·¾¶£º/config" Type="Path" Display="advanced" Required="ture" Mask="false"/>
+  <Config Name="/media" Target="/media" Default="/mnt/user/media/" Mode="rw" Description="Ã½ÌåÎÄ¼şÂ·¾¶£¬Ó³ÉäÎªÈİÆ÷Â·¾¶£º/media" Type="Path" Display="always" Required="ture" Mask="false"/>
+  <Config Name="ENABLE_CJK_FONT" Target="ENABLE_CJK_FONT" Default="" Mode="" Description="¸³ÖµÎª1¿ÉÌí¼ÓÖĞÎÄÖ§³Ö¡£" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="VNC_PASSWORD" Target="VNC_PASSWORD" Default="" Mode="" Description="8Î»×Ö·û·ÃÎÊÃÜÂë£¬ÒòÎªÏµÍ³ÏŞÖÆ£¬ÈçÉèÖÃÎª³¬³ö8Î»×Ö·û£¬ÔòÄ©Î²³¬³ö²¿·ÖµÄ×Ö·ûÎŞĞ§¡£" Type="Variable" Display="always" Required="false" Mask="ture"/>
 </Container>
