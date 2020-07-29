@@ -12,15 +12,12 @@
   <Icon>https://img.utdstc.com/icons/tiny-media-manager-mac.png</Icon>
   <Category>Cloud:</Category>
   <Overview></Overview>
-  <Description>
-   [b][u][span style='color: #E80000;']ËµÃ÷[/span][/u][/b][br]
-   ±¾Ä£°æÖ»ÊÇÎªdockerhubÉÏµÄ¾µÏñÌí¼ÓÁËUnraidÄ£°åÖ§³Ö£¬²»¶Ô¾µÏñ±¾Éí¸ºÔğ¡£
-  </Description>
+  <Description>Docker container including TinyMediaManager with GUI interface. </Description>
   <WebUI>http://[IP]:[PORT:5800]/</WebUI>
-  <Config Name="VNC_Web" Target="5800" Default="5800" Mode="tcp" Description="ÈİÆ÷¶Ë¿Ú£º5800" Type="Port" Display="always" Required="ture" Mask="false"/>
-  <Config Name="VNC_Client" Target="5900" Default="5900" Mode="tcp" Description="ÈİÆ÷¶Ë¿Ú£º5900" Type="Port" Display="always" Required="ture" Mask="false"/>
-  <Config Name="/config" Target="/config" Default="/mnt/user/appdata/tMM/" Mode="rw" Description="tMMÅäÖÃÎÄ¼şÂ·¾¶£¬Ó³ÉäÎªÈİÆ÷Â·¾¶£º/config" Type="Path" Display="advanced" Required="ture" Mask="false"/>
-  <Config Name="/media" Target="/media" Default="/mnt/user/media/" Mode="rw" Description="Ã½ÌåÎÄ¼şÂ·¾¶£¬Ó³ÉäÎªÈİÆ÷Â·¾¶£º/media" Type="Path" Display="always" Required="ture" Mask="false"/>
-  <Config Name="ENABLE_CJK_FONT" Target="ENABLE_CJK_FONT" Default="" Mode="" Description="¸³ÖµÎª1¿ÉÌí¼ÓÖĞÎÄÖ§³Ö¡£" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="VNC_PASSWORD" Target="VNC_PASSWORD" Default="" Mode="" Description="8Î»×Ö·û·ÃÎÊÃÜÂë£¬ÒòÎªÏµÍ³ÏŞÖÆ£¬ÈçÉèÖÃÎª³¬³ö8Î»×Ö·û£¬ÔòÄ©Î²³¬³ö²¿·ÖµÄ×Ö·ûÎŞĞ§¡£" Type="Variable" Display="always" Required="false" Mask="ture"/>
+  <Config Name="VNC_Web" Target="5800" Default="5800" Mode="tcp" Description="å®¹å™¨ç«¯å£ï¼š5800" Type="Port" Display="always" Required="ture" Mask="false"/>
+  <Config Name="VNC_Client" Target="5900" Default="5900" Mode="tcp" Description="å®¹å™¨ç«¯å£ï¼š5900" Type="Port" Display="always" Required="ture" Mask="false"/>
+  <Config Name="/config" Target="/config" Default="/mnt/user/appdata/tMM/" Mode="rw" Description="tMMé…ç½®æ–‡ä»¶è·¯å¾„ï¼Œæ˜ å°„ä¸ºå®¹å™¨è·¯å¾„ï¼š/config" Type="Path" Display="advanced" Required="ture" Mask="false"/>
+  <Config Name="/media" Target="/media" Default="/mnt/user/media/" Mode="rw" Description="åª’ä½“æ–‡ä»¶è·¯å¾„ï¼Œæ˜ å°„ä¸ºå®¹å™¨è·¯å¾„ï¼š/media" Type="Path" Display="always" Required="ture" Mask="false"/>
+  <Config Name="ENABLE_CJK_FONT" Target="ENABLE_CJK_FONT" Default="" Mode="" Description="èµ‹å€¼ä¸º1å¯æ·»åŠ ä¸­æ–‡æ”¯æŒã€‚" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="VNC_PASSWORD" Target="VNC_PASSWORD" Default="" Mode="" Description="8ä½å­—ç¬¦è®¿é—®å¯†ç ï¼Œå› ä¸ºç³»ç»Ÿé™åˆ¶ï¼Œå¦‚è®¾ç½®ä¸ºè¶…å‡º8ä½å­—ç¬¦ï¼Œåˆ™æœ«å°¾è¶…å‡ºéƒ¨åˆ†çš„å­—ç¬¦æ— æ•ˆã€‚" Type="Variable" Display="always" Required="false" Mask="ture"/>
 </Container>
