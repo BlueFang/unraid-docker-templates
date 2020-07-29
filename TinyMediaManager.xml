@@ -11,10 +11,11 @@
   <TemplateURL>https://github.com/BlueFang/unraid-docker-templates/blob/master/TinyMediaManager.xml</TemplateURL>
   <Icon>https://img.utdstc.com/icons/tiny-media-manager-mac.png</Icon>
   <Category>Cloud:</Category>
-  <Overview>
+  <Overview></Overview>
+  <Description>
    [b][u][span style='color: #E80000;']说明[/span][/u][/b][br]
    本模版只是为dockerhub上的镜像添加了Unraid模板支持，不对镜像本身负责。
-  </Overview>
+  </Description>
   <WebUI>http://[IP]:[PORT:5800]/</WebUI>
   <Config Name="VNC_Web" Target="5800" Default="5800" Mode="tcp" Description="容器端口：5800" Type="Port" Display="always" Required="ture" Mask="false"/>
   <Config Name="VNC_Client" Target="5900" Default="5900" Mode="tcp" Description="容器端口：5900" Type="Port" Display="always" Required="ture" Mask="false"/>
