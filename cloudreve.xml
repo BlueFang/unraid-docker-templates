@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>cloudreve</Name>
+  <Repository>xavierniu/cloudreve</Repository>
+  <Registry>https://hub.docker.com/r/xavierniu/cloudreve/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/xavierniu/cloudreve/</Support>
+  <Project/>
+  <Overview>Docker image for Cloudreve V3   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5212]</WebUI>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1596616813</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Docker image for Cloudreve V3   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5212</HostPort>
+        <ContainerPort>5212</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>0</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Key 1" Target="PUID" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="Host Key 2" Target="PGID" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="Host Port 1" Target="5212" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 5212" Type="Port" Display="always" Required="false" Mask="false">5212</Config>
+  <Config Name="Host Path 1" Target="/cloudreve/uploads" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /cloudreve/uploads" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/docker_data/cloudreve/</Config>
+  <Config Name="Host Path 2" Target="/cloudreve/conf.ini" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /cloudreve/conf.ini" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cloudreve/conf.ini</Config>
+  <Config Name="Host Path 3" Target="/cloudreve/cloudreve.db" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /cloudreve/cloudreve.db" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cloudreve/cloudreve.db</Config>
+  <Config Name="Host Path 4" Target="/aria2temp" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /temp" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/incoming/temp/</Config>
+</Container>

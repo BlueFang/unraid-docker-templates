@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>baidunetdisk</Name>
+  <Repository>johngong/baidunetdisk</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:5802</WebUI>
+  <TemplateURL/>
+  <Icon>https://img.zcool.cn/community/0114ed5945efb4a8012193a3dced37.png@1280w_1l_2o_100sh.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1604585318</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5802</HostPort>
+        <ContainerPort>5800</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5902</HostPort>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/baidunetdisk/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/incoming/BaidunetdiskDownloads/</HostDir>
+      <ContainerDir>/config/baidunetdiskdownload</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/baidunetdisk/</Config>
+  <Config Name="Host Path 2" Target="/config/baidunetdiskdownload" Default="" Mode="rw" Description="Your Download DIR" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/incoming/BaidunetdiskDownloads/</Config>
+  <Config Name="Host Port 1" Target="5800" Default="" Mode="tcp" Description="Container Port: 5800" Type="Port" Display="always" Required="false" Mask="false">5802</Config>
+  <Config Name="Host Port 2" Target="5900" Default="" Mode="tcp" Description="Container Port: 5900" Type="Port" Display="always" Required="false" Mask="false">5902</Config>
+  <Config Name="Host Key 1" Target="VNC_PASSWORD" Default="" Mode="" Description="Container Variable: VNC_PASSWORD" Type="Variable" Display="always" Required="false" Mask="true">password</Config>
+</Container>
